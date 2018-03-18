@@ -16,4 +16,8 @@ elsif input == "1"
   else
     Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
   end
+elsif input == "0"
+  Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
+end
+  
 end
