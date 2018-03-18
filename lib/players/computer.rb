@@ -3,7 +3,7 @@ require_relative '../player.rb'
 module Players
   class Computer < Player
     def move(board)
-      board.update(rand(1..9).to_i, self)
+      rand(1..9).to_i
     end
   end
 end
