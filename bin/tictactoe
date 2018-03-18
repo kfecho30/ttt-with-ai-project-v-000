@@ -11,5 +11,4 @@ Game.new.start
 
 puts "Play again? (Y/N)"
 again = gets.strip.upcase
-if again == "Y"
-  Game.new.start
+again == "Y" ? Game.new.start : puts "Thanks for playing!"
