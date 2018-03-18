@@ -3,7 +3,3 @@
 require_relative '../config/environment'
 
 Game.new.start
-
-puts "Play again? (Y/N)"
-again = gets.strip.upcase
-again == "Y" ? (Game.new.start) : (puts "Thanks for playing!")
