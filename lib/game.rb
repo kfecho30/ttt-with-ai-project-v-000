@@ -68,4 +68,19 @@ class Game
     end
   end
 
+  def start
+    if input == "2"
+      Game.new.play
+    elsif input == "1"
+      puts "Do you want to be X or O?"
+      pick = gets.strip.upcase
+      if pick == "X"
+        Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
+      else
+        Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new).play
+      end
+    elsif input == "0"
+      Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
+    end
+  end
 end
