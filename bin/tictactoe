@@ -2,4 +2,8 @@
 
 require_relative '../config/environment'
 puts "Welcome to Tic Tac Toe!"
-Game.play
+puts "How many players would you like? Enter 0, 1, or 2."
+
+input = gets.strip
+
+if input ==
