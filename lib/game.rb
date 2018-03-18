@@ -85,5 +85,8 @@ class Game
     elsif input == "0"
       Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new).play
     end
+    puts "Play again? (Y/N)"
+    again = gets.strip.upcase
+    again == "Y" ? (Game.new.start) : (puts "Thanks for playing!")
   end
 end
