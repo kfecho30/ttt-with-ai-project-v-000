@@ -59,9 +59,11 @@ class Game
     end
     if won?
       puts "Congratulations #{winner}!"
+      @board.display
       return true
     elsif draw?
       puts "Cat's Game!"
+      @board.display
       return false
     end
   end
