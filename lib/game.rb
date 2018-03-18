@@ -69,6 +69,9 @@ class Game
   end
 
   def start
+    puts "Welcome to Tic Tac Toe!"
+    puts "How many players would you like? Enter 0, 1, or 2."
+    input = gets.strip
     if input == "2"
       Game.new.play
     elsif input == "1"
